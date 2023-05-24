@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "title": "Test product",
+    "description": "This is a test product",
+    "price": 3,
+    "thumbnail": "No image",
+    "code": "a111",
+    "stock": 10
+  },
+  {
+    "id": 1,
+    "title": "Test product 2",
+    "description": "This is a test product 2",
+    "price": 6,
+    "thumbnail": "No image",
+    "code": "a222",
+    "stock": 20
+  },
+  {
+    "id": 2,
+    "title": "Test product 3",
+    "description": "This is a test product 3",
+    "price": 9,
+    "thumbnail": "No image",
+    "code": "a333",
+    "stock": 30
+  }
+]

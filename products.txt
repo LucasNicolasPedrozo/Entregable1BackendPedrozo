@@ -16,14 +16,5 @@
     "thumbnail": "No image",
     "code": "a222",
     "stock": 20
-  },
-  {
-    "id": 2,
-    "title": "Test product 3",
-    "description": "This is a test product 3",
-    "price": 9,
-    "thumbnail": "No image",
-    "code": "a333",
-    "stock": 30
   }
 ]

@@ -133,7 +133,7 @@ class ProductManager {
 (async () => {
         try {
             let test = new ProductManager();
-            console.log(test.getProduct());
+            
             await test.addProduct(
                 "Test product",
                 "This is a test product",
@@ -158,7 +158,7 @@ class ProductManager {
                 "a333",
                 30
             );
-            console.log(test.getProduct());
+            test.getProduct();
             await test.getProductById(1);
             await test.updateProduct(2, "stock", 60);
             await test.getProductById(4);

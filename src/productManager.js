@@ -1,4 +1,4 @@
-const ARCHIVO = "products.json";
+const ARCHIVO = "../products.json";
 const fs = require("fs");
 
 class ProductManager {
@@ -46,11 +46,11 @@ class ProductManager {
     };
     
     async getProducts() {
-    try {
-      return (this.products = readProducts(this.path));
-    } catch (error) {
-      console.log(error);
-    }
+        try {
+            return readProducts(this.path);
+        } catch (error) {
+            console.log(error);
+        }
     }
         
 
@@ -126,13 +126,13 @@ class ProductManager {
 };
 
 async function readProducts(file) {
-  try {
-    const data = await fs.promises.readFile(file, "utf-8");
-    const products = JSON.parse(data);
-    return products;
-  } catch (error) {
-    console.log("Error al leer los archivos");
-  }
-}
+     try {
+        const data = await fs.promises.readFile(file, "utf-8");
+        const products = JSON.parse(data);
+        return products;
+    } catch (error) {
+        console.log("Error al leer los archivos");
+    }
+};
 
 module.exports = { ProductManager };

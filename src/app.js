@@ -14,15 +14,15 @@ app.get('/', (req, res) => {
 app.get('/products', async (req, res) => {
   try {
     const limit = req.query.limit;
-    const response = await ProductManager.getProducts();
-
-    let products = response.data;
-
+    const response = await productManager.getProducts();
+    console.log(limit);
+    console.log(response);
+    
     if (limit) {
       products = products.slice(0, limit);
     }
 
-    res.json(products);
+    res.send(response);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Ha ocurrido un error en la solicitud' });

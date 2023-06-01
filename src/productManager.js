@@ -122,17 +122,19 @@ class ProductManager {
         } catch (error) {
             console.log(error);
         };
-    };
+    };    
 };
 
 async function readProducts(file) {
-     try {
-        const data = await fs.promises.readFile(file, "utf-8");
-        const products = JSON.parse(data);
-        return products;
-    } catch (error) {
-        console.log("Error al leer los archivos");
-    }
-};
+        try {
+            const data = await fs.promises.readFile(file, "utf-8");
+            const products = JSON.parse(data);
+            return products;
+        } catch (error) {
+            console.log("Error al leer los archivos");
+        }
+    };
+
+
 
 module.exports = { ProductManager };
